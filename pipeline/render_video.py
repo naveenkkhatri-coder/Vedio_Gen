@@ -25,7 +25,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 CARD_W, CARD_H = 2400, 1350          # oversized for smooth Ken Burns
 FADE = 0.5                           # xfade duration between scenes
 VO_LEAD = 0.6                        # silence before narration in a scene
-VO_TAIL = 1.0                        # silence after narration
+VO_TAIL = 1.2                        # silence after narration
 SR = 44100
 
 FONT_DIRS = [
@@ -165,27 +165,51 @@ def make_card(scene, index, total, out_png):
         dd.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 255, 255, a))
     img = Image.alpha_composite(img, deco.filter(ImageFilter.GaussianBlur(6)))
 
-    d = ImageDraw.Draw(img)
+    # translucent shapes go on their own layer: ImageDraw writes RGBA values
+    # verbatim (no blending), so drawing them straight onto the card would
+    # come out opaque after the final RGB convert
+    ov = Image.new("RGBA", (CARD_W, CARD_H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(ov)
+    meas = ImageDraw.Draw(img)
 
     # channel tag chip (top center)
     tag = scene.get("tag", "NATURE WARNING SIGNS")
     f_tag = ImageFont.truetype(FONT_BOLD, 44)
-    tw = d.textbbox((0, 0), tag, font=f_tag)[2]
+    tw = meas.textbbox((0, 0), tag, font=f_tag)[2]
     pad = 34
     x0 = (CARD_W - tw) / 2 - pad
-    d.rounded_rectangle([x0, 92, x0 + tw + 2 * pad, 92 + 84], radius=42,
-                        fill=(255, 255, 255, 46))
-    d.text(((CARD_W - tw) / 2, 108), tag, font=f_tag, fill=(255, 255, 255, 235))
+    od.rounded_rectangle([x0, 92, x0 + tw + 2 * pad, 92 + 84], radius=42,
+                         fill=(255, 255, 255, 46))
 
-    # number badge (big circle, left of center block)
+    # number badge circle
     badge = scene["badge"]
     br = 150
     bx, by = CARD_W / 2, 400
-    d.ellipse([bx - br, by - br, bx + br, by + br], fill=(255, 255, 255, 240))
-    f_badge = ImageFont.truetype(FONT_BLACK, 170 if len(badge) == 1 else 120)
-    bb = d.textbbox((0, 0), badge, font=f_badge)
-    d.text((bx - (bb[2] - bb[0]) / 2 - bb[0], by - (bb[3] - bb[1]) / 2 - bb[1]),
-           badge, font=f_badge, fill=hex_rgb(scene["colors"][0]))
+    od.ellipse([bx - br, by - br, bx + br, by + br], fill=(255, 255, 255, 240))
+
+    # action strip pill
+    action = scene.get("action")
+    if action:
+        f_act = ImageFont.truetype(FONT_BOLD, 58)
+        aw = meas.textbbox((0, 0), action, font=f_act)[2]
+        apad = 44
+        ax0 = (CARD_W - aw) / 2 - apad
+        od.rounded_rectangle([ax0, 990, ax0 + aw + 2 * apad, 990 + 116],
+                             radius=58, fill=(0, 0, 0, 90))
+
+    # progress dots (current one bigger and brighter)
+    n = total
+    dot_r, gap = 11, 44
+    row_w = n * 2 * dot_r + (n - 1) * (gap - 2 * dot_r)
+    sx = (CARD_W - row_w) / 2
+    for i in range(n):
+        cx = sx + i * gap + dot_r
+        r = 15 if i == index else dot_r
+        a = 255 if i == index else 90
+        od.ellipse([cx - r, 1230 - r, cx + r, 1230 + r],
+                   fill=(255, 255, 255, a))
+
+    img = Image.alpha_composite(img, ov)
 
     # emoji flanking the badge
     em = draw_emoji(scene.get("emoji", ""), 300)
@@ -193,34 +217,19 @@ def make_card(scene, index, total, out_png):
         img.alpha_composite(em, (int(bx) + 330, int(by) - 150))
         img.alpha_composite(em.transpose(Image.FLIP_LEFT_RIGHT),
                             (int(bx) - 330 - 300, int(by) - 150))
-    d = ImageDraw.Draw(img)
 
-    # title
+    # opaque text on top
+    d = ImageDraw.Draw(img)
+    d.text(((CARD_W - tw) / 2, 108), tag, font=f_tag, fill=(255, 255, 255))
+    f_badge = ImageFont.truetype(FONT_BLACK, 170 if len(badge) == 1 else 120)
+    bb = d.textbbox((0, 0), badge, font=f_badge)
+    d.text((bx - (bb[2] - bb[0]) / 2 - bb[0], by - (bb[3] - bb[1]) / 2 - bb[1]),
+           badge, font=f_badge, fill=hex_rgb(scene["colors"][0]))
     f_title = ImageFont.truetype(FONT_BLACK, 128)
     wrap_center(d, scene["title"].split("\n"), f_title, 760, (255, 255, 255, 255))
-
-    # action strip
-    action = scene.get("action")
     if action:
-        f_act = ImageFont.truetype(FONT_BOLD, 58)
-        aw = d.textbbox((0, 0), action, font=f_act)[2]
-        pad = 44
-        ax0 = (CARD_W - aw) / 2 - pad
-        d.rounded_rectangle([ax0, 990, ax0 + aw + 2 * pad, 990 + 116],
-                            radius=58, fill=(0, 0, 0, 90))
         d.text(((CARD_W - aw) / 2, 1016), action, font=f_act,
                fill=(255, 255, 255, 245))
-
-    # progress dots
-    n = total
-    dot_r, gap = 11, 44
-    row_w = n * 2 * dot_r + (n - 1) * (gap - 2 * dot_r)
-    sx = (CARD_W - row_w) / 2
-    for i in range(n):
-        cx = sx + i * gap + dot_r
-        a = 255 if i == index else 80
-        d.ellipse([cx - dot_r, 1230 - dot_r, cx + dot_r, 1230 + dot_r],
-                  fill=(255, 255, 255, a))
 
     img.convert("RGB").save(out_png, "PNG")
 
