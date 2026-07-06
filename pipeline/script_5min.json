@@ -1,0 +1,90 @@
+{
+  "title": "7 Nature Warning Signs You Should Never Ignore",
+  "channel_tag": "NATURE WARNING SIGNS",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "intro",
+      "badge": "!",
+      "emoji": "🌊",
+      "title": "7 Nature Warning Signs\nYou Should Never Ignore",
+      "action": "Number 2 might be in your backyard...",
+      "colors": ["#0E2A5C", "#1D6FE0"],
+      "narration": "You're swimming at the beach, when the ocean around you turns into a giant checkerboard. Perfect squares, stretching to the horizon. It looks amazing. It is also one of the most dangerous things the sea can do. Today, seven warning signs from nature that you should never ignore. And stick around for number two. It might be hiding in your own backyard."
+    },
+    {
+      "id": "square-waves",
+      "badge": "7",
+      "emoji": "🌊",
+      "title": "Square Waves",
+      "action": "Swim parallel to shore, then straight in",
+      "colors": ["#0B7285", "#22B8CF"],
+      "narration": "Number seven. Square waves. This checkerboard pattern is called a cross sea. It happens when two wave systems collide at nearly a right angle, usually left over from two different storms. It looks calm from the beach, but underneath, powerful currents are pulling in two directions at once. Boats struggle to steer through it, and even strong swimmers tire out fast. If the water starts to look like a chessboard, swim parallel to the shore until the pattern ends, then head straight in."
+    },
+    {
+      "id": "ocean-retreat",
+      "badge": "6",
+      "emoji": "🏖️",
+      "title": "The Ocean\nSuddenly Disappears",
+      "action": "Tsunami warning — get to high ground now",
+      "colors": ["#7A2E0E", "#E8590C"],
+      "narration": "Number six. The ocean suddenly disappears. If the water pulls back hundreds of feet past low tide, leaving fish flopping on the sand, do not walk out to explore. A sudden ocean retreat is nature's final warning before a tsunami. The water is not gone. It is being pulled back, to return as a wall. From the moment the sea vanishes, you may have less than five minutes. Drop everything, move to high ground, and do not stop."
+    },
+    {
+      "id": "green-sky",
+      "badge": "5",
+      "emoji": "⛈️",
+      "title": "A Green Sky",
+      "action": "Giant hail and tornadoes — get inside",
+      "colors": ["#2B5B1E", "#66A80F"],
+      "narration": "Number five. A green sky. Storm clouds are supposed to be gray. If the sky turns the color of pea soup, those clouds are so tall, and so packed with water and ice, that they filter sunlight the way an ocean does. Clouds like that love producing giant hail, and tornadoes. Get inside, stay away from the windows, and if you live in tornado country, make the basement your new favorite room."
+    },
+    {
+      "id": "rip-current",
+      "badge": "4",
+      "emoji": "🏊",
+      "title": "The Calm Patch\nof Water",
+      "action": "Don't fight it — swim sideways",
+      "colors": ["#1B4965", "#4DA8DA"],
+      "narration": "Number four. The calm patch of water. You scan the sea, and one channel looks perfectly smooth, while waves break on either side of it. That quiet lane is a rip current. A conveyor belt of water rushing away from the beach, faster than an Olympic swimmer. If it grabs you, do not fight it. Float, keep breathing, and swim sideways, parallel to the beach, until you escape the belt. Then let the waves carry you back home. Panic is the real danger, not the water."
+    },
+    {
+      "id": "j-trees",
+      "badge": "3",
+      "emoji": "🌲",
+      "title": "Trees Shaped\nLike the Letter J",
+      "action": "The hillside is slowly sliding",
+      "colors": ["#3E2723", "#8D6E63"],
+      "narration": "Number three. Trees shaped like the letter J. Trees cannot move, so they write their life story in their trunks. When every tree on a hillside curves at the base and straightens at the top, the ground beneath them is slowly sliding downhill, and the trees keep correcting themselves as it creeps. One bent tree means nothing. A whole slope of them means landslide country, especially after heavy rain. Not the place for a picnic, and definitely not the place for a house."
+    },
+    {
+      "id": "sinkhole",
+      "badge": "2",
+      "emoji": "🕳️",
+      "title": "A Circle of Dead Grass\nin Your Yard",
+      "action": "Possible sinkhole — rope it off, call an engineer",
+      "colors": ["#4A148C", "#9C27B0"],
+      "narration": "Number two. A perfect circle of dead grass in your yard. Told you this one was close to home. If the grass dies in a ring, and the center feels soft and sunken when you step on it, you might be standing on a sinkhole in progress. Underground water slowly dissolves the rock below, and the surface is the last thing to know. If doors in your house suddenly refuse to close, and new cracks appear above your windows, do not test the spot by jumping on it. Rope it off, keep kids and pets away, and call an engineer."
+    },
+    {
+      "id": "silence",
+      "badge": "1",
+      "emoji": "🦉",
+      "title": "The Forest\nGoes Silent",
+      "action": "Thousands of ears just voted 'hide'",
+      "colors": ["#1A1A2E", "#16213E"],
+      "narration": "And number one. The forest goes silent. Birds chirping, insects buzzing, and then, in the space of a few seconds, nothing. Animals go quiet for one reason. Something they fear has just arrived. It could be a predator moving through. It could be a coming storm. Whatever it is, thousands of ears better than yours just voted to hide. Stop, look around, and move calmly back toward open ground. You do not need to know what the danger is, to respect it."
+    },
+    {
+      "id": "outro",
+      "badge": "✓",
+      "emoji": "🌟",
+      "title": "Nature Always\nWarns You First",
+      "action": "Subscribe for more",
+      "colors": ["#B7791F", "#F6C445"],
+      "narration": "So here is the golden rule that covers all seven. When nature suddenly changes its behavior, the water, the sky, the sound, that is not a photo opportunity. That is a message. Read it, and you will be fine. If this video taught you something new, share it with a friend who needs it, and subscribe for more. Stay safe, stay curious, and see you in the next one."
+    }
+  ]
+}
