@@ -305,10 +305,12 @@ def main():
         fc.append(f"[{prev}][{i}:v]xfade=transition=fade:duration={FADE}:"
                   f"offset={off:.3f}[{lab}]")
         prev = lab
+    # pin 4:2:0 — xfade can negotiate yuv444p, which most players can't decode
+    fc.append(f"[{prev}]format=yuv420p[vout]")
     silent = work / "video_only.mp4"
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(fc),
-         "-map", f"[{prev}]", "-c:v", "libx264", "-preset", "medium",
-         "-crf", "19", str(silent)])
+         "-map", "[vout]", "-c:v", "libx264", "-preset", "medium",
+         "-crf", "19", "-profile:v", "high", str(silent)])
 
     # 3) audio: VO placed at each scene's start + music bed underneath
     music = work / "music.wav"
