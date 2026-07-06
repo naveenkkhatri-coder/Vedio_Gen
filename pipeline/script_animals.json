@@ -1,0 +1,90 @@
+{
+  "title": "7 Animal Encounters That Could Save Your Life",
+  "channel_tag": "SURVIVAL RULES",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "intro",
+      "badge": "!",
+      "emoji": "🐻",
+      "title": "7 Animal Encounters —\nThe Right Move Every Time",
+      "action": "Your instincts are wrong...",
+      "colors": ["#1B3022", "#3E7C4F"],
+      "narration": "A bear stands up on the trail ahead of you, and every instinct in your body screams run. If you listen to that instinct, you lose. Today, seven animal encounters, and exactly what to do in each one, because the right move is almost never the one your body wants to make. And number one could save your life this very summer."
+    },
+    {
+      "id": "dog",
+      "badge": "7",
+      "emoji": "🐕",
+      "title": "An Aggressive Dog",
+      "action": "Stand still, turn sideways, be boring",
+      "colors": ["#5C3A00", "#C98A2B"],
+      "narration": "Number seven. An aggressive dog. If a strange dog charges you, do not run, and do not scream. Running turns you into prey, and dogs are faster than you. Stand still, turn sideways, and keep your hands up near your chest. Avoid staring into its eyes, that reads as a challenge. In dog language, boring things are not worth biting. If it does attack, feed it your jacket, your bag, anything but your arms, and back away toward safety."
+    },
+    {
+      "id": "bees",
+      "badge": "6",
+      "emoji": "🐝",
+      "title": "A Swarm of Bees",
+      "action": "RUN in a straight line — don't jump in water",
+      "colors": ["#7A5C00", "#E2B007"],
+      "narration": "Number six. A swarm of bees. Forget the movies. Do not jump into a pond, bees will simply wait above the surface for you to come up for air. And do not swat, crushed bees release a scent that calls for backup. Instead, run. Bees defend their hive, they will not chase you forever. Run in a straight line, cover your face with your shirt, and get inside a building or a car as fast as you can."
+    },
+    {
+      "id": "snake",
+      "badge": "5",
+      "emoji": "🐍",
+      "title": "A Snake Bite",
+      "action": "Stay calm, keep the bite below your heart",
+      "colors": ["#1F4A1F", "#5B9E42"],
+      "narration": "Number five. A snake bite. First, the don'ts. Do not suck out the venom, do not cut the wound, and do not tie a tourniquet, those tricks belong in old western movies, and they make things worse. Instead, move away from the snake, stay as calm as you can, and keep the bitten limb still, and below the level of your heart. A racing heart pumps venom faster. Remove rings and watches before the swelling starts, and get to a hospital."
+    },
+    {
+      "id": "shark",
+      "badge": "4",
+      "emoji": "🦈",
+      "title": "A Shark,\nWay Too Close",
+      "action": "Don't splash — keep eye contact",
+      "colors": ["#0A2E4E", "#1B6CA8"],
+      "narration": "Number four. A shark, way too close. Splashing and paddling away in a panic makes you look exactly like a wounded seal. Instead, stay vertical in the water, and keep your eyes on the shark. Sharks are ambush hunters, and they hate being watched. Back up slowly against a reef or a rock, so nothing can approach you from behind. If it comes at you anyway, go for the nose, the gills, and the eyes. Poke, do not slap."
+    },
+    {
+      "id": "moose",
+      "badge": "3",
+      "emoji": "🦌",
+      "title": "An Angry Moose",
+      "action": "The one animal you SHOULD run from",
+      "colors": ["#3B2A1A", "#7D5A3C"],
+      "narration": "Number three. A moose. And here is the twist. Everything you just learned about not running, forget it. When a moose pins its ears back and lowers its head, you run, and you put something big between you, a tree, a car, a boulder. Moose are not predators, they just want you gone, and they rarely chase far. If one knocks you down, curl into a ball, protect your head, and stay still until it moves away."
+    },
+    {
+      "id": "cougar",
+      "badge": "2",
+      "emoji": "🐆",
+      "title": "A Mountain Lion",
+      "action": "Look HUGE — never crouch, never turn",
+      "colors": ["#4A3000", "#A8752B"],
+      "narration": "Number two. A mountain lion. With big cats, size is everything, so become the biggest thing on that trail. Open your jacket wide, raise your arms, and speak in a loud, firm voice. Back away slowly, and never, ever crouch down or turn your back, because that is exactly how prey behaves. If it keeps coming, throw stones, branches, whatever you can reach. And if it attacks, fight back hard. People have driven off cougars with their bare hands."
+    },
+    {
+      "id": "bear",
+      "badge": "1",
+      "emoji": "🐻",
+      "title": "A Bear\non the Trail",
+      "action": "Stand your ground — NEVER run",
+      "colors": ["#2C1810", "#6B4226"],
+      "narration": "And number one. A bear. Do not run. No human has ever outrun a bear, they can hit thirty five miles per hour. Instead, stand your ground, speak in a calm, low voice, and back away slowly, sideways if you can. If a black bear actually attacks, fight back with everything you have, and aim for the face. If a grizzly knocks you down after a surprise encounter, play dead, flat on your stomach, with your hands locked behind your neck. And in bear country, carry bear spray. It works better than anything else."
+    },
+    {
+      "id": "outro",
+      "badge": "✓",
+      "emoji": "🌟",
+      "title": "Stand Your Ground —\nExcept for the Moose",
+      "action": "Subscribe for more",
+      "colors": ["#B7791F", "#F6C445"],
+      "narration": "So here is the pattern behind all seven. Predators chase whatever runs, so with dogs, big cats, sharks, and bears, you stand your ground. And with a moose, the one animal that only wants space, you give it space. Quick recap. Dog, be boring. Bees, run in a straight line. Snake, stay calm and keep the bite low. Shark, keep eye contact. Moose, run and hide behind a tree. Mountain lion, look huge and fight. Bear, stand your ground, never run. If this could save your next hike, share it with the friend you hike with, and subscribe for more. Stay safe, stay curious, and see you in the next one."
+    }
+  ]
+}

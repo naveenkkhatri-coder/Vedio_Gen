@@ -1,0 +1,12 @@
+{
+  "bg": ["#2C2A4A", "#14132B"], "diagonal": true,
+  "emojis": [{"char": "🏠", "size": 300, "x": 900, "y": 120},
+             {"char": "🐟", "size": 210, "x": 960, "y": 430}],
+  "ring": [920, 400, 1210, 670],
+  "lines": [
+    {"text": "YOUR HOUSE SMELLS", "size": 96, "color": "#FFFFFF", "x": 46, "y": 55},
+    {"text": "LIKE FISH?", "size": 140, "color": "#FFE01B", "x": 46, "y": 170},
+    {"text": "YOUR WALLS MAY", "size": 90, "color": "#FFFFFF", "x": 46, "y": 460},
+    {"text": "BE MELTING!", "size": 120, "color": "#FF3B30", "x": 46, "y": 565}
+  ]
+}

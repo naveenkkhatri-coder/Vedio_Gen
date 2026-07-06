@@ -1,0 +1,10 @@
+{
+  "bg": ["#1B3022", "#0A140D"], "diagonal": true,
+  "emojis": [{"char": "🐻", "size": 380, "x": 830, "y": 170}],
+  "arrow": {"tail": [640, 320], "head": [820, 380]},
+  "lines": [
+    {"text": "IF A BEAR", "size": 120, "color": "#FFFFFF", "x": 46, "y": 50},
+    {"text": "CHARGES YOU...", "size": 110, "color": "#FFE01B", "x": 46, "y": 190},
+    {"text": "NEVER RUN!", "size": 150, "color": "#FF3B30", "x": 46, "y": 500}
+  ]
+}

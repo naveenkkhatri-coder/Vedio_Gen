@@ -1,0 +1,90 @@
+{
+  "title": "7 Warning Signs Your House Sends Before Disaster",
+  "channel_tag": "HOME WARNING SIGNS",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "intro",
+      "badge": "!",
+      "emoji": "🏠",
+      "title": "7 Warning Signs Your House\nSends Before Disaster",
+      "action": "That fish smell? It's not dinner...",
+      "colors": ["#2C2A4A", "#4F518C"],
+      "narration": "You walk into your living room, and it smells like fried fish. Nobody is cooking. Nobody ordered food. That smell might be the most expensive one you will ever ignore, because somewhere behind your walls, plastic could be melting. Today, seven warning signs your house sends before disaster strikes. And number one can turn deadly in a single evening."
+    },
+    {
+      "id": "water-heater",
+      "badge": "7",
+      "emoji": "♨️",
+      "title": "A Rumbling\nWater Heater",
+      "action": "Sediment buildup — flush the tank",
+      "colors": ["#5C1A1A", "#B84A39"],
+      "narration": "Number seven. A rumbling water heater. If your water heater pops, crackles, or rumbles like a giant coffee maker, that is not just old age. A layer of sediment has built up at the bottom of the tank, and water trapped underneath it is boiling and exploding its way out. That means overheating, wasted energy, and in the worst case, a tank that fails completely. Flushing the tank once a year usually fixes it. Ignoring it for years means replacing it."
+    },
+    {
+      "id": "ceiling-paint",
+      "badge": "6",
+      "emoji": "💧",
+      "title": "Bubbling Paint\non the Ceiling",
+      "action": "Hidden water leak — find the source fast",
+      "colors": ["#0E4C63", "#3A9BB8"],
+      "narration": "Number six. Bubbling or peeling paint on the ceiling. Paint does not bubble because it is bored. Water is collecting behind it, from a leaking roof, a cracked pipe, or an overflowing bathroom upstairs. By the time you can see a bubble, the leak has usually been running for a while. Do not just pop it and forget it. Find the source and fix it fast, because wet ceilings grow mold, and soggy drywall eventually comes down all on its own."
+    },
+    {
+      "id": "breaker",
+      "badge": "5",
+      "emoji": "⚡",
+      "title": "A Breaker That\nKeeps Tripping",
+      "action": "Never swap in a bigger breaker",
+      "colors": ["#4A3B00", "#B8960F"],
+      "narration": "Number five. A breaker that keeps tripping. Once in a while is fine, that is the breaker doing its job. But if the same switch flips every week, your house is telling you a circuit is overloaded, or a wire is loose somewhere it should not be. Do not just flip it back and move on, and never, ever swap it for a bigger breaker. That silences the messenger, and lets the wiring slowly cook. Call an electrician instead."
+    },
+    {
+      "id": "cracks",
+      "badge": "4",
+      "emoji": "🧱",
+      "title": "Stair-Step Cracks\nin the Walls",
+      "action": "Foundation movement — get an inspection",
+      "colors": ["#4E342E", "#8D6E63"],
+      "narration": "Number four. Stair step cracks in your brick or block walls. Hairline cracks happen in every house, and most of them are harmless. But cracks that climb through the mortar in a staircase pattern mean one side of your foundation is moving, or sinking. Watch for the supporting cast too. Doors that suddenly stick, windows that will not close, and floors that slope. If they all show up together, get a foundation inspection before the repair price gets scary."
+    },
+    {
+      "id": "pilot-light",
+      "badge": "3",
+      "emoji": "🔥",
+      "title": "A Yellow\nPilot Light",
+      "action": "Should be BLUE — yellow = carbon monoxide",
+      "colors": ["#1A237E", "#3F51B5"],
+      "narration": "Number three. A yellow pilot light. The flame in your gas furnace or water heater should burn crisp blue. If it burns lazy yellow or orange, the gas is not burning completely, and incomplete burning produces carbon monoxide. A gas you cannot see, cannot smell, and cannot survive in high doses. Black soot around the appliance, and constant condensation on nearby windows, are parts of the same warning. Get a carbon monoxide detector, and get the appliance serviced."
+    },
+    {
+      "id": "fish-smell",
+      "badge": "2",
+      "emoji": "🐟",
+      "title": "That Fried\nFish Smell",
+      "action": "Melting wire insulation — electrician, today",
+      "colors": ["#37474F", "#607D8B"],
+      "narration": "Number two. That fried fish smell. Electrical wiring is wrapped in plastic insulation, and when connections overheat, that plastic starts to melt, and melting insulation smells like fish. If the smell is strongest near an outlet, a switch, or your breaker panel, and it comes and goes with certain appliances, treat it as a fire alarm that arrived early. Unplug what you can, and call an electrician the same day. House fires often send this exact invitation first."
+    },
+    {
+      "id": "gas",
+      "badge": "1",
+      "emoji": "💨",
+      "title": "The Smell of\nRotten Eggs",
+      "action": "GAS LEAK — no switches, get out, call",
+      "colors": ["#B71C1C", "#E53935"],
+      "narration": "And number one. The smell of rotten eggs. Natural gas has no smell at all, so gas companies add that stink on purpose, to save your life. If your home suddenly smells like rotten eggs, do not turn any lights on or off, do not use your phone inside, and do not start the car in the garage. One spark is enough. Open a door on your way out, walk everyone outside, and call the gas company from a safe distance. Every minute matters."
+    },
+    {
+      "id": "outro",
+      "badge": "✓",
+      "emoji": "🌟",
+      "title": "Your House\nWhispers First",
+      "action": "Subscribe for more",
+      "colors": ["#B7791F", "#F6C445"],
+      "narration": "Here is the rule that ties all seven together. Houses almost never fail without warning. They whisper first, through smells, sounds, and cracks, and disasters happen when nobody listens. Quick recap. A rumbling heater means sediment. Bubbling paint means a leak. A restless breaker means bad wiring. Staircase cracks mean a moving foundation. A yellow flame means carbon monoxide. A fishy smell means melting wires. And rotten eggs mean gas, get out first, and ask questions later. Walk through your home this weekend and check all seven, it takes ten minutes. Then share this with someone who owns a house, and subscribe for more. Stay safe, stay curious, and see you in the next one."
+    }
+  ]
+}
