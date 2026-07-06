@@ -334,7 +334,8 @@ def main():
 
     # 4) mux
     run(["ffmpeg", "-y", "-i", str(silent), "-i", str(mixed),
-         "-c:v", "copy", "-c:a", "copy", "-shortest", str(out_path)])
+         "-c:v", "copy", "-c:a", "copy", "-shortest",
+         "-movflags", "+faststart", str(out_path)])
     print(f"done: {out_path} ({ffprobe_duration(out_path):.1f}s)", flush=True)
 
 
