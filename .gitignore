@@ -1,2 +1,2 @@
-__pycache__/
-*.pyc
+pipeline/token.json
+pipeline/client_secret.json
