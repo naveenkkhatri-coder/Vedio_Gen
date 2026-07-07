@@ -93,8 +93,12 @@ def upload(yt, cfg, pkg, privacy, publish_at):
 
     thumb = pkg / cfg.get("thumbnail", "thumbnail.jpg")
     if thumb.exists():
-        yt.thumbnails().set(videoId=vid, media_body=str(thumb)).execute()
-        print("thumbnail set")
+        try:
+            yt.thumbnails().set(videoId=vid, media_body=str(thumb)).execute()
+            print("thumbnail set")
+        except Exception:  # custom thumbnails need a phone-verified channel
+            print(f"thumbnail rejected — verify the channel at "
+                  f"youtube.com/verify, then set {thumb} in Studio or rerun")
 
     srt = pkg / cfg.get("captions", "captions_en.srt")
     if srt.exists():
