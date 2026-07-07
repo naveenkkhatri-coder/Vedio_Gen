@@ -98,13 +98,17 @@ def upload(yt, cfg, pkg, privacy, publish_at):
 
     srt = pkg / cfg.get("captions", "captions_en.srt")
     if srt.exists():
-        yt.captions().insert(
-            part="snippet",
-            body={"snippet": {"videoId": vid, "language": "en",
-                              "name": "English", "isDraft": False}},
-            media_body=MediaFileUpload(str(srt), mimetype="text/plain"),
-        ).execute()
-        print("captions uploaded")
+        try:
+            yt.captions().insert(
+                part="snippet",
+                body={"snippet": {"videoId": vid, "language": "en",
+                                  "name": "English", "isDraft": False}},
+                media_body=MediaFileUpload(str(srt), mimetype="text/plain"),
+            ).execute()
+            print("captions uploaded")
+        except Exception as e:  # device-flow tokens lack the captions scope
+            print(f"captions API not permitted ({e.__class__.__name__}) — "
+                  f"add {srt} manually in Studio > Subtitles")
 
     playlist = cfg.get("playlist")
     if playlist:
